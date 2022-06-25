@@ -23,8 +23,8 @@ export const COLUMNS = [
         Cell: (props) => {
             const { value, cell } = props;
             return (
-                <div className="short-url" title={"http://localhost:5000/" + value}>
-                    <a {...cell.getCellProps()} onClick={refreshPage} href={"http://localhost:5000/" + value} rel="noopener noreferrer" target="_blank">{"http://localhost:5000/" + value}</a>
+                <div className="short-url" title={"https://jsg-short.herokuapp.com/" + value}>
+                    <a {...cell.getCellProps()} onClick={refreshPage} href={"https://jsg-short.herokuapp.com/" + value} rel="noopener noreferrer" target="_blank">{"https://jsg-short.herokuapp.com/" + value}</a>
                 </div>
             )
         }

@@ -8,6 +8,7 @@ import { TableUrl } from "./components/TableUrl"
 
 function App() {
 
+  const uri = "https://jsg-url.herokuapp.com/"
   const [inputValue, setInputValue] = useState("");
   const [data, setData] = useState([]); 
   const [isLoading, setIsLoading] = useState(false);
@@ -18,7 +19,7 @@ function App() {
     setIsLoading(true);
     axios({
       method : "GET",
-      url: "http://localhost:5000/getData",
+      url: uri + "getData",
     }).then( res => {
       setData(res.data);   
       setIsLoading(false);

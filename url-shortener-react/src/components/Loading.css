@@ -1,12 +1,10 @@
 .loading-container {
-    width: 50%;
-    margin: auto;
-    position: fixed;
     display: flex;
     justify-content: center;
 }
 
 .lds-ring {
+    margin-top: 40px;
     width: 80px;
     height: 80px;
 }

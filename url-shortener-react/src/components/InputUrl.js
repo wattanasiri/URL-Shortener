@@ -9,12 +9,13 @@ import { CgSoftwareDownload } from 'react-icons/cg'
 
 const InputUrl = ({ setInputValue, inputValue, refreshData, setRefreshData }) => {
 
+    const uri = "https://jsg-url.herokuapp.com/"
     const [full, setFull] = useState("");
     const [shortenLink, setShortenLink] = useState("");
     const [qrcode, setQrcode] = useState("");
 
     const isValidURL = (string) => {
-        var res = string.match(/(http(s)?:\/\/.)?(www\.)?[-a-zA-Z0-9@:%._\+~#=]{2,256}\.[a-z]{2,6}\b([-a-zA-Z0-9@:%_\+.~#?&//=]*)/g);
+        var res = string.match(/(\b(https?|ftp|file):\/\/[-A-Z0-9+&@#/%?=~_|!:,.;]*[-A-Z0-9+&@#/%=~_|])/ig);
         return (res !== null)
     };
 
@@ -22,10 +23,10 @@ const InputUrl = ({ setInputValue, inputValue, refreshData, setRefreshData }) =>
         setInputValue(full);
         setFull("");
         if(isValidURL(full)){
-            axios.post("http://localhost:5000/shortUrl", { full })
+            axios.post(uri + "shortUrl", { full })
             .then(function(res){
                 console.log(res)
-                setShortenLink("http://localhost:5000/" + res.data.short)
+                setShortenLink(uri + res.data.short)
                 setRefreshData(!refreshData)
             })
             .catch(function(err){
@@ -57,7 +58,7 @@ const InputUrl = ({ setInputValue, inputValue, refreshData, setRefreshData }) =>
                 <input
                 className="input-box"
                 type="text"
-                placeholder="https://example.com"
+                placeholder="https://example.co.th/"
                 value={full}
                 onChange={e => setFull(e.target.value)}  
                 />

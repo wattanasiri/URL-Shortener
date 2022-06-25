@@ -2,6 +2,10 @@ const router = require('express').Router();
 const ShortUrl = require('../models/shortUrl.model')
 const middlewareObj = require('../middleware/index');
 
+router.get('/', (req, res) => {
+    res.redirect("https://jigsawgroups-short-url.herokuapp.com")
+})
+
 router.get('/getData', (req, res) => {
     ShortUrl.find({}, (err, foundShortUrl) => {
         if(err){

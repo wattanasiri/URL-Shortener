@@ -82,10 +82,8 @@
     text-overflow: ellipsis;
 }
 
-.table-container .table .loading {
+.table-container .table tbody.loading {
     border: transparent;
-    margin-top: 20px;
-    height: 50px;
 }
 
 .table-container .table .error {
