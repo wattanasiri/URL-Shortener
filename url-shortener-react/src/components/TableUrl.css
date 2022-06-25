@@ -1,0 +1,131 @@
+.table-container {
+    padding: 60px 100px;
+    margin-top: 40px;
+    background-color: rgba(0, 0, 0, 0.45);
+    border-radius: 20px;
+}
+
+.table-container .header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.table-container .header h3 {
+    color: #fff;
+}
+
+.table-container .header .search-box{
+    display: flex;
+    align-items: flex-end;
+    color: #fff;
+}
+
+.table-container .header .search-box input {
+    margin-right: 6px;
+    border: none;
+    border-bottom: 1px solid #fff;
+    background-color: transparent;
+    color: #fff;
+    text-align: end;
+}
+
+.table-container .header .search-box input:focus-visible {
+    outline: none;
+    border-bottom: 2px solid #fff;
+}
+
+.table-container .table {
+    margin-top: 30px;
+    color: #fff;
+}
+
+.table-container .table th{
+    font-size: 20px;
+}
+
+.table-container .table th,
+.table-container .table td {
+    padding: 12px;
+}
+
+.table-container .table span {
+    display: flex;
+    justify-content: center;
+}
+
+.table-container .table a {
+    color: #fff;
+}
+
+.table-container .table th#full-url {
+    width: 480px;
+}
+
+.table-container .table th#short-url {
+    width: 330px;
+}
+
+.table-container .table .full-url {
+    width: 460px;
+    height: 20px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.table-container .table .short-url {
+    width: 300px;
+    height: 20px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.table-container .table .loading {
+    border: transparent;
+    margin-top: 20px;
+    height: 50px;
+}
+
+.table-container .table .error {
+    width: 50%;
+    margin: auto;
+    position: fixed; 
+}
+
+.table-container .table .error .error-message {
+    margin-top: 20px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+}
+
+.table-container .footer {
+    margin-top: 30px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.table-container .footer input {
+    border: 0;
+    border-radius: 10px;
+    text-align: end;
+    width: 50px;
+}
+
+.table-container .footer .button {
+    margin-left: 10px;
+}
+
+.table-container .footer .button button {
+    color: #fff;
+    padding: 0;
+    background-color: transparent;
+    border: none;
+}
+
+.table-container .footer .button button:disabled {
+    color: rgba(0, 0, 0, 0.3);
+}

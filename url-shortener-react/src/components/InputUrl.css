@@ -1,0 +1,130 @@
+.input-container {
+    padding: 60px 100px;
+    margin: 40px;
+    background-color: rgba(0, 0, 0, 0.45);
+    border-radius: 20px;
+}
+
+.input-container h3 {
+    color: #FFF;
+    margin-bottom: 20px;
+}
+
+.input-container .input-box {
+    width: 780px;
+    height: 50px;
+    padding: 20px;
+    margin-right: 20px;
+    border: 0;
+    border-radius: 20px;
+}
+
+.input-container .button-shorten {
+    height: 50px;
+    width: 120px;
+    border: 0;
+    border-radius: 20px;
+    font-weight: 600;
+    background-color: #E0FBFC;
+    transition: all 0.3s;
+}
+
+.input-container .button-shorten:hover {
+    background-color: #98C1D9;
+}
+
+.input-container .result {
+    height: 100px;
+}
+
+.input-container .result {
+    height: fit-content;
+    margin-top: 50px;
+    margin-bottom: 0;
+    padding-bottom: 0%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.input-container .result p {
+    display: flex;
+    align-items: center;
+    margin: 0;
+    padding: 0 15px;
+    background-color: #FFF;
+    height: 40px;
+    width: 370px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    border-radius: 10px 0 0 10px;
+}
+
+.input-container .result button.copy {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    width: 180px;
+    height: 40px;
+    border: 0;
+    border-radius: 0 10px 10px 0;
+    background-color: #3d5a80;
+    transition: all 0.3s;
+}
+
+.input-container .result button.copy:hover{
+    background-color: #122846;
+}
+
+.input-container .result button#qr {
+    margin-left: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    width: 140px;
+    height: 40px;
+    border: 0;
+    border-radius: 10px;
+    background-color: #3d5a80;
+    transition: all 0.3s;
+}
+
+.input-container .result button#qr:hover {
+    background-color: #122846;
+}
+
+.input-container .qrcode .qrcode-image {
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.input-container .qrcode img {
+    width: 240px;
+}
+
+.input-container .qrcode .qrcode-download {
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+}
+
+.input-container .qrcode .qrcode-download a{
+    display: flex;
+    width: 180px;
+    padding: 10px;
+    border-radius: 20px;
+    background-color: #3d5a80;
+    justify-content: center;
+    text-align: center;
+    text-decoration: none;
+    color: #fff;
+    transition: all 0.3s;
+}
+
+.input-container .qrcode .qrcode-download a:hover{
+    background-color: #122846;
+}
