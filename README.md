@@ -3,20 +3,20 @@
 ## ขั้นตอนการติดตั้ง
 
 ### 1. Backend (NodeJS)
-  1.1 เมื่อโหลด Repository ไปให้ทำกับเข้าไปที่โฟล์เดอร์ "URL-Shortener"และทำการเปิด terminal ขึ้นมา
-  1.2 ทำการเข้าไปที่ Folder "backend" ผ่านทาง terminal โดยใช้คำสั่ง 
-  "cd url-shortener-react"
-  "cd backend"
-  โดยให้ terminal ขึ้นดังนี้ \URL-Shortener\url-shortener-react\backend>
-  1.3 ทำการพิมคำสั่ง "nodemon server.js" (หากยังไม่ได้ติดตั้ง nodemon ให้ทำการพิมคำสั่ง "npm i nodemon")
-  1.4 ทำการ Run ส่วนของ Backend (NodeJS) เสร็จสิ้น
+  1.1 เมื่อโหลด Repository ไปให้ทำกับเข้าไปที่โฟล์เดอร์ "URL-Shortener"และทำการเปิด terminal ขึ้นมา<br/>
+  1.2 ทำการเข้าไปที่ Folder "backend" ผ่านทาง terminal โดยใช้คำสั่ง <br/>
+  "cd url-shortener-react" <br/>
+  "cd backend" <br/>
+  โดยให้ terminal ขึ้นดังนี้ \URL-Shortener\url-shortener-react\backend> <br/>
+  1.3 ทำการพิมคำสั่ง "nodemon server.js" (หากยังไม่ได้ติดตั้ง nodemon ให้ทำการพิมคำสั่ง "npm i nodemon") <br/>
+  1.4 ทำการ Run ส่วนของ Backend (NodeJS) เสร็จสิ้น <br/>
   
 ### 2. Frontend (React)
-  2.1 เมื่อโหลด Repository ไปให้ทำกับเข้าไปที่โฟล์เดอร์ "URL-Shortener"และทำการเปิด terminal ขึ้นมา
-  2.2 ทำการเข้าไปที่ Folder "url-shortener-react" ผ่านทาง terminal โดยใช้คำสั่ง 
-  "cd url-shortener-react"
-  โดยให้ terminal ขึ้นดังนี้ \URL-Shortener\url-shortener-react\>
-  2.3 ทำการพิมพ์คำสั่ง "npm start"
+  2.1 เมื่อโหลด Repository ไปให้ทำกับเข้าไปที่โฟล์เดอร์ "URL-Shortener"และทำการเปิด terminal ขึ้นมา <br/>
+  2.2 ทำการเข้าไปที่ Folder "url-shortener-react" ผ่านทาง terminal โดยใช้คำสั่ง <br/>
+  "cd url-shortener-react" <br/>
+  โดยให้ terminal ขึ้นดังนี้ \URL-Shortener\url-shortener-react\> <br/>
+  2.3 ทำการพิมพ์คำสั่ง "npm start" <br/>
   
   
 ## เพิ่มเติม
