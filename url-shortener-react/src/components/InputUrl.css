@@ -1,7 +1,7 @@
 .input-container {
     padding: 60px 100px;
     margin: 40px;
-    background-color: rgba(0, 0, 0, 0.45);
+    background-color: rgba(0, 0, 0, 0.5);
     border-radius: 20px;
 }
 
@@ -11,7 +11,7 @@
 }
 
 .input-container .input-box {
-    width: 780px;
+    width: 840px;
     height: 50px;
     padding: 20px;
     margin-right: 20px;
@@ -21,7 +21,7 @@
 
 .input-container .button-shorten {
     height: 50px;
-    width: 120px;
+    width: 150px;
     border: 0;
     border-radius: 20px;
     font-weight: 600;
@@ -35,9 +35,6 @@
 
 .input-container .result {
     height: 100px;
-}
-
-.input-container .result {
     height: fit-content;
     margin-top: 50px;
     margin-bottom: 0;
@@ -54,7 +51,7 @@
     padding: 0 15px;
     background-color: #FFF;
     height: 40px;
-    width: 370px;
+    width: 450px;
     overflow: hidden;
     text-overflow: ellipsis;
     border-radius: 10px 0 0 10px;

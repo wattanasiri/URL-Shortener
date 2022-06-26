@@ -59,11 +59,11 @@
 }
 
 .table-container .table th#full-url {
-    width: 480px;
+    width: 500px;
 }
 
 .table-container .table th#short-url {
-    width: 330px;
+    width: 400px;
 }
 
 .table-container .table .full-url {
@@ -75,7 +75,7 @@
 }
 
 .table-container .table .short-url {
-    width: 300px;
+    width: 380px;
     height: 20px;
     white-space: nowrap;
     overflow: hidden;

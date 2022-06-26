@@ -4,6 +4,7 @@ import CopyToClipboard from "react-copy-to-clipboard";
 import QrCode from "qrcode"
 import "./InputUrl.css"
 
+import LoadingSpinner from "./Loading"
 import { MdQrCode2 } from "react-icons/md"
 import { CgSoftwareDownload } from 'react-icons/cg'
 
@@ -12,6 +13,7 @@ const InputUrl = ({ setInputValue, inputValue, refreshData, setRefreshData }) =>
     const uri = "https://jsg-url.herokuapp.com/"
     const [full, setFull] = useState("");
     const [shortenLink, setShortenLink] = useState("");
+    const [isLoading, setIsLoading] = useState(false);
     const [qrcode, setQrcode] = useState("");
 
     const isValidURL = (string) => {
@@ -20,6 +22,8 @@ const InputUrl = ({ setInputValue, inputValue, refreshData, setRefreshData }) =>
     };
 
     const shortenClick = () => {
+        setIsLoading(true)
+        setQrcode("")
         setInputValue(full);
         setFull("");
         if(isValidURL(full)){
@@ -27,13 +31,16 @@ const InputUrl = ({ setInputValue, inputValue, refreshData, setRefreshData }) =>
             .then(function(res){
                 console.log(res)
                 setShortenLink(uri + res.data.short)
+                setIsLoading(false)
                 setRefreshData(!refreshData)
             })
             .catch(function(err){
+                setIsLoading(false)
                 console.log(err)
             })
         } else {
             alert("The URL is not valid.")
+            setIsLoading(false)
         }
     }
 
@@ -64,15 +71,17 @@ const InputUrl = ({ setInputValue, inputValue, refreshData, setRefreshData }) =>
                 />
                 <button className="button-shorten" onClick={shortenClick}>Shorten</button>
             </div>
-            <div className="result">
+            {isLoading ? <div className = "loading"><LoadingSpinner /></div>
+            : <div className="result">
                 <p><a href={shortenLink} rel="noopener noreferrer" target="_blank">{shortenLink}</a></p>
                 <CopyToClipboard
                     text={shortenLink}
                 >
-                <button className="copy">Copy to Clipboard</button>
+                <button className="copy" onClick={() => alert("Copy link to clipboard")}>Copy to Clipboard</button>
                 </CopyToClipboard>
                 <button onClick={generateQrCode} id="qr"><MdQrCode2 size={20} />&nbsp;Generate</button>
             </div>
+            }
             <div className="qrcode">
                 {qrcode && <>
                     <div className="qrcode-image"><img alt={shortenLink} src={qrcode} /></div>
