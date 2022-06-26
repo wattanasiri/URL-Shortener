@@ -17,8 +17,8 @@
   "cd url-shortener-react" <br/>
   โดยให้ terminal ขึ้นดังนี้ \URL-Shortener\url-shortener-react\> <br/>
   2.3 ทำการพิมพ์คำสั่ง "npm start" <br/>
-  
-  
+  1.4 ทำการ Run ส่วนของ Frontend (React) เสร็จสิ้น <br/>
+    
 ## เพิ่มเติม
 
 - หากต้องการเปลี่ยน DB ที่ใช้ให้ทำการเข้าไปที่ไฟล์ ".env" ในโฟล์เดอร์ backend และทำการเปลี่ยนลิงค์ ATLAS_URI ให้ตรงกับ DB ที่ต้องการเชื่อมต่อ
