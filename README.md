@@ -3,8 +3,8 @@
 ## ขั้นตอนการติดตั้ง
 
 ### 1. Backend (NodeJS)
-  1.1 เมื่อโหลด Repository ไปให้ทำกับเข้าไปที่โฟล์เดอร์ "URL-Shortener"และทำการเปิด terminal ขึ้นมา<br/>
-  1.2 ทำการเข้าไปที่ Folder "backend" ผ่านทาง terminal โดยใช้คำสั่ง <br/>
+  1.1-- เมื่อโหลด Repository ไปให้ทำกับเข้าไปที่โฟล์เดอร์ "URL-Shortener"และทำการเปิด terminal ขึ้นมา<br/>
+  1.2-- ทำการเข้าไปที่ Folder "backend" ผ่านทาง terminal โดยใช้คำสั่ง <br/>
   "cd url-shortener-react" <br/>
   "cd backend" <br/>
   โดยให้ terminal ขึ้นดังนี้ \URL-Shortener\url-shortener-react\backend> <br/>
