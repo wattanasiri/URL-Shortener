@@ -63,7 +63,7 @@ export const TableUrl = ({data, isLoading, errorMessage}) => {
                             ))
                         }                   
                     </thead>
-                    {isLoading ? <tbody className = "loading"><tr><td colspan="3"><LoadingSpinner /></td></tr></tbody>
+                    {isLoading ? <tbody className = "loading"><tr><td colSpan="3"><LoadingSpinner /></td></tr></tbody>
                     : <tbody {...getTableBodyProps}>
                     {
                         page.map(row => {

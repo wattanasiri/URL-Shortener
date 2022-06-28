@@ -1,6 +1,4 @@
-function refreshPage(){
-    window.location.reload();
-} 
+const uri = "https://jsg-url.herokuapp.com/"
 
 export const COLUMNS = [
     {
@@ -23,8 +21,8 @@ export const COLUMNS = [
         Cell: (props) => {
             const { value, cell } = props;
             return (
-                <div className="short-url" title={"https://jsg-url.herokuapp.com/" + value}>
-                    <a {...cell.getCellProps()} onClick={refreshPage} href={"https://jsg-url.herokuapp.com/" + value} rel="noopener noreferrer" target="_blank">{"https://jsg-url.herokuapp.com/" + value}</a>
+                <div className="short-url" title={uri + value}>
+                    <a {...cell.getCellProps()} href={uri + value} rel="noopener noreferrer" target="_blank">{uri + value}</a>
                 </div>
             )
         }
